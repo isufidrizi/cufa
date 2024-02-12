@@ -1,4 +1,5 @@
 <?php
+
 interface Veprime{
     public function leviz();
 }
