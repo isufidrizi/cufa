@@ -1,5 +1,14 @@
 <?php
-class Njeri{
+interface Veprime{
+    public function leviz();
+}
+
+class Njeri implements Veprime{
+
+    public function leviz(){
+        return "posht nalt";
+    }
+
     public function dora()
     {
         return "dora jem";
@@ -8,4 +17,4 @@ class Njeri{
 
 $njeri = new Njeri();
 
-echo $njeri->dora();
+echo $njeri->leviz();
